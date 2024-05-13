@@ -1,0 +1,565 @@
+
+******* 132 Label(s) *******
+~~~done_check{00034} = $1347 
+~~~done_check{00036} = $1382 
+~~~done_check{00038} = $13CC 
+~~~done_check{00040} = $1416 
+~~~done_check{00042} = $1460 
+~~~done{00067} = $160C 
+~~~done{00068} = $161D 
+~~~done{00105} = $1BE4 
+~~~done{00106} = $1C11 
+~~~exit{00002} = $1073 
+~~~exit{00003} = $1098 
+~~~exit{00004} = $10C0 
+~~~exit{00005} = $10E5 
+~~~has_collided{00034} = $1345 
+~~~has_collided{00036} = $136F 
+~~~has_collided{00038} = $13B9 
+~~~has_collided{00040} = $1403 
+~~~has_collided{00042} = $144D 
+~~~has_not_collided{00034} = $1340 
+~~~has_not_collided{00036} = $136A 
+~~~has_not_collided{00038} = $13B4 
+~~~has_not_collided{00040} = $13FE 
+~~~has_not_collided{00042} = $1448 
+~~~loop{00002} = $1050 
+~~~loop{00003} = $1075 
+~~~loop{00004} = $109D 
+~~~loop{00005} = $10C2 
+~~~read_char_loop{00067} = $1600 
+~~~read_char_loop{00068} = $1611 
+~~~set_to_off{00002} = $105E 
+~~~set_to_off{00003} = $1083 
+~~~set_to_off{00004} = $10AB 
+~~~set_to_off{00005} = $10D0 
+~~~set_to_on{00002} = $1066 
+~~~set_to_on{00003} = $108B 
+~~~set_to_on{00004} = $10B3 
+~~~set_to_on{00005} = $10D8 
+~~~skip_death_animations{00153} = $1E75 
+~~~skip_death_animations{00154} = $1EA7 
+~~~skip_death_animations{00156} = $1EE0 
+~~~skip_death_animations{00157} = $1F12 
+~~~skip_death_animations{00159} = $1F4B 
+~~~skip_death_animations{00160} = $1F7D 
+~~~skip_death_animations{00162} = $1FB6 
+~~~skip_death_animations{00163} = $1FE8 
+~~~skip{00002} = $106B 
+~~~skip{00003} = $1090 
+~~~skip{00004} = $10B8 
+~~~skip{00005} = $10DD 
+~~~update_pointer{00153} = $1E81 
+~~~update_pointer{00154} = $1EB3 
+~~~update_pointer{00156} = $1EEC 
+~~~update_pointer{00157} = $1F1E 
+~~~update_pointer{00159} = $1F57 
+~~~update_pointer{00160} = $1F89 
+~~~update_pointer{00162} = $1FC2 
+~~~update_pointer{00163} = $1FF4 
+~~~update_score{00036} = $137F 
+~~~update_score{00038} = $13C9 
+~~~update_score{00040} = $1413 
+~~~update_score{00042} = $145D 
+add_to_score = $1696 
+animate_sprite_1 = $1E4F 
+animate_sprite_2 = $1EBA 
+animate_sprite_3 = $1F25 
+animate_sprite_4 = $1F90 
+bank_chain = $166A 
+check_any_hit = $147F 
+check_bullet_collision = $1352 
+check_enemy_colliding_with_city = $12D9 
+check_joystick_input = $1A4E 
+CHECK_PLAYER_BULLET_HIT_ENEMY = $14EC 
+check_player_collided_with_bullet = $12FC 
+clear = $37BA 
+clear_game_over = $1226 
+clear_print_press = $160F 
+end_of_level = $1181 
+fire_bullets = $1BA8 
+fire_from_robot = $1BB9 
+fire_from_UFO = $1BE6 
+flash_loop = $15F7 
+flash_player = $1C14 
+flash_stars = $1048 
+gameplay_loop = $100E 
+handle_enemy_hit_by_bullet = $164F 
+handle_player_input = $1A25 
+inc_chain = $16A9 
+initiate_game = $100B 
+is_off_screen = $17ED 
+kill_sound = $12C0 
+loop_menu = $15F4 
+main = $1008 
+main_menu_loop = $15C7 
+move_enemy = $1C3E 
+move_enemy_3 = $1D71 
+move_enemy_4 = $1DE0 
+move_enemy_bullet = $1C29 
+move_enemy2_hori = $1D09 
+move_enemy2_vert = $1CAF 
+odd = $109B 
+play_death_sound = $1270 
+play_explosion_sound = $1255 
+play_fire_sound = $129A 
+press_to_continue = $37A0 
+print_key_press = $15FE 
+random = $162E 
+recharge_bullets = $115D 
+reset_all_enemies = $1AEC 
+reset_background_border_colour = $1623 
+reset_chain = $168B 
+reset_enemy_1_sprites = $1B06 
+reset_enemy_2_sprites = $1B12 
+reset_enemy_3_sprites = $1B1D 
+reset_enemy_4_sprites = $1B29 
+reset_enemy_bullet = $1AFC 
+return = $1C13 
+run_collision_checks = $12C6 
+run_death = $1539 
+run_game_initiation = $1899 
+run_menu = $15B0 
+run_menu_init = $1801 
+run_script = $16C0 
+run_sounds = $1233 
+set_player_colour = $10E8 
+set_sprite_1_animation_to_astroid = $1E88 
+set_sprite_2_animation_to_ufo = $1EF3 
+set_sprite_3_animation_to_astroid = $1F5E 
+set_sprite_4_animation_to_astroid = $1FC9 
+update_bullet_UI = $111E 
+update_bullet_UI_colour = $1135 
+update_colour = $1620 
+update_enemies = $1B35 
+
+******* 63 Unused label(s) *******
+@call_enemy2_vert
+@call_move_enemy_3
+@call_move_enemy_4
+@check_enemy_2_collision
+@check_enemy_3_collision
+@check_enemy_4_collision
+@check_high
+@checkLow
+@colliding_with_city
+@complete_joy_check
+@complete_update
+@do
+@done
+@done
+@done
+@done
+@done
+@done
+@done
+@done
+@done
+@done_flash
+@draw_game_over
+@draw_menu
+@end_game
+@exit
+@exit
+@exit
+@exit
+@exit
+@exit
+@exit
+@exit
+@exit
+@finish
+@fire_direction_complete
+@flash_background
+@full_frame_skip
+@handle_expolsion_sound
+@handle_fires_sound
+@handle_flip_shot
+@has_bullet
+@has_not_collided
+@hori_check
+@input_down_check
+@input_fire_check
+@input_left_check
+@input_right_check
+@input_up_check
+@jmp_to_death
+@kill
+@kill_player
+@left
+@left
+@left
+@level1
+@level2
+@level3
+@level4
+@level5
+@level6
+@level7
+@level8
+@level9
+@loop
+@loop
+@loop
+@move_astroid_down
+@move_astroid_down
+@move_astroid_down
+@move_down
+@move_down
+@move_down
+@move_down
+@move_down
+@move_hori
+@move_hori
+@move_hori
+@move_left
+@move_muncher_down
+@move_muncher_left
+@move_muncher_right
+@move_muncher_up
+@move_right
+@move_ufo_down
+@move_ufo_up
+@moveDown
+@moveLeft
+@moveRight
+@moveUp
+@no_bullet
+@no_bullets
+@nobullet
+@one_bullet
+@play_end_sound
+@recharge
+@reset_chain
+@reset_death
+@ret
+@return
+@return
+@right
+@right
+@right
+@run_level2
+@run_level3
+@run_level4
+@run_level5
+@run_level6
+@run_level7
+@run_level8
+@run_level9
+@set_bounced_false
+@set_bounced_true
+@set_bullet_as_not_firing
+@set_player_colour_to_not_shooting
+@setEnemy1ToVar1
+@setEnemy2ToVar1
+@setEnemy3ToVar1
+@setEnemy4ToVar1
+@setSecondFrame
+@single_frame_skip
+@skip
+@skip
+@skip_d
+@skip_no_frame
+@skip_no_frame
+@skip_u
+@true
+@turn_end_of_level_off
+@update_display
+~~~done_check{00034}
+~~~done_check{00036}
+~~~done_check{00038}
+~~~done_check{00040}
+~~~done_check{00042}
+~~~done{00067}
+~~~done{00068}
+~~~done{00105}
+~~~done{00106}
+~~~exit{00002}
+~~~exit{00003}
+~~~exit{00004}
+~~~exit{00005}
+~~~has_collided{00034}
+~~~has_collided{00036}
+~~~has_collided{00038}
+~~~has_collided{00040}
+~~~has_collided{00042}
+~~~has_not_collided{00034}
+~~~has_not_collided{00036}
+~~~has_not_collided{00038}
+~~~has_not_collided{00040}
+~~~has_not_collided{00042}
+~~~loop{00002}
+~~~loop{00003}
+~~~loop{00004}
+~~~loop{00005}
+~~~read_char_loop{00067}
+~~~read_char_loop{00068}
+~~~set_to_off{00002}
+~~~set_to_off{00003}
+~~~set_to_off{00004}
+~~~set_to_off{00005}
+~~~set_to_on{00002}
+~~~set_to_on{00003}
+~~~set_to_on{00004}
+~~~set_to_on{00005}
+~~~skip_death_animations{00153}
+~~~skip_death_animations{00154}
+~~~skip_death_animations{00156}
+~~~skip_death_animations{00157}
+~~~skip_death_animations{00159}
+~~~skip_death_animations{00160}
+~~~skip_death_animations{00162}
+~~~skip_death_animations{00163}
+~~~skip{00002}
+~~~skip{00003}
+~~~skip{00004}
+~~~skip{00005}
+~~~update_pointer{00153}
+~~~update_pointer{00154}
+~~~update_pointer{00156}
+~~~update_pointer{00157}
+~~~update_pointer{00159}
+~~~update_pointer{00160}
+~~~update_pointer{00162}
+~~~update_pointer{00163}
+~~~update_score{00036}
+~~~update_score{00038}
+~~~update_score{00040}
+~~~update_score{00042}
+check_joystick_input
+is_off_screen
+
+******* 182 Variable(s) *******
+A  = $0001
+ANDROID_ENEMY_F1_SPRITE_VALUE  = $003B
+ANDROID_ENEMY_RESET_FRAME  = $003E
+ANDROID_X_SPEED_ADDRESS  = $C035
+ANDROID_Y_SPEED_ADDRESS  = $C037
+ANIMATION_TIMER_ADDRESS  = $0076
+ASTROID_ENEMY_F1_SPRITE_VALUE  = $0036
+ASTROID_ENEMY_RESET_FRAME  = $0038
+ASTROID_Y_SPEED_ADDRESS  = $C022
+B  = $0002
+BACKGROUND_COLOUR_LOCATION  = $D021
+Black  = $0000
+Blue  = $0006
+BORDER_COLOUR_LOCATION  = $D020
+Brown  = $0009
+BULLET_DIRECTION_LOCATION  = $0079
+BULLET_IS_FIRING_LOCATION  = $0078
+BULLET_MOVE_SPEED  = $000A
+BULLET_RECHARGE_SPEED  = $000A
+BULLET_UI_START_ADDRESS  = $073F
+BULLET_X_ADDRESS_LOW  = $D004
+BULLET_Y_ADDRESS  = $D005
+BULLETS_AVAILABLE  = $C04F
+C  = $0003
+CHAIN_ADDRESS  = $C004
+CHAIN_INCREASE_AMOUNT  = $000A
+CITY_COLLISION_Y  = $00B1
+ClearBlock  = $0020
+COLLISION_TAKEN_PLACE_ADDRESS  = $007E
+COLOUR_RAM  = $D800
+CURRENT_LEVEL  = $C053
+Cyan  = $0003
+D  = $0004
+DarkGray  = $000B
+DEATH_SOUND_PITCH  = $C04A
+DEATH_TIMER_LOW  = $C006
+DOWN  = $0001
+E  = $0005
+END_OF_LEVEL_TIME  = $00A0
+END_OF_LEVEL_TIMER  = $C052
+ENEMIES_KILLED_HIGH  = $C029
+ENEMIES_KILLED_LOW  = $C028
+ENEMY_1_CURRENT_FRAME_ADDRESS  = $07FB
+ENEMY_1_ENABLED_MASK  = $0008
+ENEMY_1_SPRITE_ADDRESS  = $07FB
+ENEMY_1_VARIATION  = $C012
+ENEMY_1_X_ADDRESS  = $D006
+ENEMY_1_Y_ADDRESS  = $D007
+ENEMY_2_CURRENT_FRAME_ADDRESS  = $07FC
+ENEMY_2_ENABLED_MASK  = $0010
+ENEMY_2_SPRITE_ADDRESS  = $07FC
+ENEMY_2_VARIATION  = $C014
+ENEMY_2_X_ADDRESS  = $D008
+ENEMY_2_Y_ADDRESS  = $D009
+ENEMY_3_CURRENT_FRAME_ADDRESS  = $07FD
+ENEMY_3_ENABLED_MASK  = $0020
+ENEMY_3_SPRITE_ADDRESS  = $07FD
+ENEMY_3_VARIATION  = $C016
+ENEMY_3_X_ADDRESS  = $D00A
+ENEMY_3_Y_ADDRESS  = $D00B
+ENEMY_4_CURRENT_FRAME_ADDRESS  = $07FF
+ENEMY_4_ENABLED_MASK  = $0080
+ENEMY_4_SPRITE_ADDRESS  = $07FF
+ENEMY_4_VARIATION  = $C039
+ENEMY_4_X_ADDRESS  = $D00E
+ENEMY_4_Y_ADDRESS  = $D00F
+ENEMY_BULLET_ENABLED_MASK  = $0040
+ENEMY_BULLET_IS_FIRING_ADDRESS  = $007A
+ENEMY_BULLET_MAX_Y  = $00DF
+ENEMY_BULLET_SPEED  = $0002
+ENEMY_BULLET_SPRITE_ADDRESS  = $07FE
+ENEMY_BULLET_SPRITE_VALUE  = $0038
+ENEMY_BULLET_X  = $D00C
+ENEMY_BULLET_X_SPEED_ADDRESS  = $C031
+ENEMY_BULLET_Y  = $D00D
+ENEMY_BULLET_Y_SPEED_ADDRESS  = $C033
+ENEMY_FRAME_COLLISION_PARAM  = $007C
+ENEMY_HIT_COLLISION_PARAM  = $007F
+ENEMY_X_ADDRESS_COLLISION_PARAM  = $007B
+ENEMY1_HIT  = $C008
+ENEMY2_HIT  = $C00A
+ENEMY3_HIT  = $C00C
+ENEMY4_HIT  = $C03B
+EXPLOSION_COUNTER  = $C03D
+EXPLOSION_F1_SPRITE_VALUE  = $002F
+EXPLOSION_PITCH  = $C03E
+EXPLOSION_RESET_FRAME  = $0032
+EXTRA_LIFE_AWARDED  = $C04E
+F  = $0006
+FALSE  = $0000
+FIRE_SOUND_COUNTER  = $C04C
+FIRE_SOUND_PITCH  = $C04D
+G  = $0007
+GAMEPLAY_TIMER_ADDRESS  = $0077
+Green  = $0005
+H  = $0008
+HI_SCORE_ADDRESS_HIGH  = $C00E
+HI_SCORE_ADDRESS_LOW  = $C010
+I  = $0009
+IS_IN_END_OF_LEVEL  = $C051
+J  = $000A
+K  = $000B
+L  = $000C
+LEVEL_END_PITCH  = $C054
+LightBlue  = $000E
+LightGray  = $000F
+LightGreen  = $000D
+LightRed  = $000A
+LIVES_ADDRESS  = $C002
+M  = $000D
+MAX_BULLETS  = $0007
+MAX_CHAIN  = $00C8
+MediumGray  = $000C
+MENU_FLASH  = $C01A
+MUNCHER_1_HAS_BOUNCED_ADDRESS  = $C01C
+MUNCHER_ENEMY_F1_SPRITE_VALUE  = $0032
+MUNCHER_ENEMY_RESET_FRAME  = $0035
+MUNCHER_X_SPEED_ADDRESS  = $C01E
+MUNCHER_Y_SPEED_ADDRESS  = $C020
+N  = $000E
+O  = $000F
+Orange  = $0008
+P  = $0010
+PLAYER_ADDRESS  = $07F8
+PLAYER_BULLET_SPRITE_ADDRESS  = $07FA
+PLAYER_BULLET_SPRITE_VALUE  = $002A
+PLAYER_FLIPPED_LOCATION  = $0002
+PLAYER_FRAME_1_VALUE  = $0028
+PLAYER_FRAME_2_VALUE  = $0029
+PLAYER_HALF_SPEED  = $0002
+PLAYER_IN_DEATH_STATE  = $C018
+PLAYER_MAX_X  = $00EA
+PLAYER_MAX_Y  = $00DE
+PLAYER_MIN_X  = $001E
+PLAYER_MIN_Y  = $0034
+PLAYER_MOVE_SPEED  = $0004
+PLAYER_SHOT_LIMIT  = $00C8
+PLAYER_X_ADDRESS_LOW  = $D000
+PLAYER_Y_ADDRESS  = $D001
+Purple  = $0004
+Q  = $0011
+R  = $0012
+RANDOMISER_HIGH  = $C02F
+RANDOMISER_LOW  = $C02E
+RECHARGE_TIMER  = $C050
+Red  = $0002
+RESET_BOTTOM_POSITION  = $00FA
+RESET_TOP_POSITION  = $0019
+ROBOT_ENEMY_F1_SPRITE_VALUE  = $002B
+ROBOT_ENEMY_RESET_FRAME  = $002D
+ROBOT_X_SPEED_ADDRESS  = $C024
+ROBOT_Y_SPEED_ADDRESS  = $C026
+S  = $0013
+SB  = $D418
+SCORE_ADDRESS_HIGH  = $C001
+SCORE_ADDRESS_LOW  = $C000
+SND  = $D400
+SPRITE_ENABLED_ADDRESS  = $D015
+T  = $0014
+TEMP1  = $0073
+TEMP2  = $0074
+TEMP3  = $0075
+TEMP4  = $007D
+tgt_c64  = $0001
+TRUE  = $0001
+U  = $0015
+UFO_ENEMY_F1_SPRITE_VALUE  = $0039
+UFO_ENEMY_RESET_FRAME  = $003B
+UFO_X_SPEED_ADDRESS  = $C02A
+UFO_Y_SPEED_ADDRESS  = $C02C
+UI_HAS_BULLET  = $0051
+UI_NO_BULLET  = $0057
+UP  = $0000
+V  = $0016
+VRAM_END_ADDRESS  = $0800
+VRAM_START_ADDRESS  = $0400
+W  = $0017
+White  = $0001
+X  = $0018
+Y  = $0019
+Yellow  = $0007
+Z  = $001A
+******* -82 Unused variables(s) *******
+B
+Blue
+Brown
+BULLET_UI_START_ADDRESS
+COLOUR_RAM
+Cyan
+D
+DarkGray
+DOWN
+ENEMY_BULLET_SPEED
+ENEMY_FRAME_COLLISION_PARAM
+ENEMY_HIT_COLLISION_PARAM
+ENEMY_X_ADDRESS_COLLISION_PARAM
+EXPLOSION_F1_SPRITE_VALUE
+EXPLOSION_RESET_FRAME
+F
+G
+Green
+H
+I
+J
+K
+LEVEL_END_PITCH
+LightBlue
+LightGray
+LightGreen
+LightRed
+MediumGray
+MENU_FLASH
+N
+Orange
+PLAYER_HALF_SPEED
+Purple
+Q
+R
+Red
+S
+SB
+SND
+tgt_c64
+U
+UP
+VRAM_END_ADDRESS
+VRAM_START_ADDRESS
+White
+X
+Y
+Yellow
+Z
+

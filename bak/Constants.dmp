@@ -1,0 +1,80 @@
+
+******* 0 Label(s) *******
+
+******* 0 Unused label(s) *******
+
+******* 36 Variable(s) *******
+Black  = $0000
+Blue  = $0006
+Brown  = $0009
+BULLET_MOVE_SPEED  = $0007
+Cyan  = $0003
+DarkGray  = $000B
+DOWN  = $0001
+ENEMY_1_ENABLED_MASK  = $0008
+ENEMY_2_ENABLED_MASK  = $0010
+ENEMY_3_ENABLED_MASK  = $0020
+ENEMY_4_ENABLED_MASK  = $0080
+ENEMY_BULLET_ENABLED_MASK  = $0040
+ENEMY_BULLET_SPEED  = $0001
+FALSE  = $0000
+Green  = $0005
+LightBlue  = $000E
+LightGray  = $000F
+LightGreen  = $000D
+LightRed  = $000A
+MAX_CHAIN  = $000A
+MediumGray  = $000C
+Orange  = $0008
+PLAYER_MAX_X  = $00EA
+PLAYER_MAX_Y  = $00DE
+PLAYER_MIN_X  = $001E
+PLAYER_MIN_Y  = $0034
+PLAYER_MOVE_SPEED  = $0004
+Purple  = $0004
+Red  = $0002
+RESET_BOTTOM_POSITION  = $00FA
+RESET_TOP_POSITION  = $0019
+tgt_c64  = $0001
+TRUE  = $0001
+UP  = $0000
+White  = $0001
+Yellow  = $0007
+******* 36 Unused variables(s) *******
+Black
+Blue
+Brown
+BULLET_MOVE_SPEED
+Cyan
+DarkGray
+DOWN
+ENEMY_1_ENABLED_MASK
+ENEMY_2_ENABLED_MASK
+ENEMY_3_ENABLED_MASK
+ENEMY_4_ENABLED_MASK
+ENEMY_BULLET_ENABLED_MASK
+ENEMY_BULLET_SPEED
+FALSE
+Green
+LightBlue
+LightGray
+LightGreen
+LightRed
+MAX_CHAIN
+MediumGray
+Orange
+PLAYER_MAX_X
+PLAYER_MAX_Y
+PLAYER_MIN_X
+PLAYER_MIN_Y
+PLAYER_MOVE_SPEED
+Purple
+Red
+RESET_BOTTOM_POSITION
+RESET_TOP_POSITION
+tgt_c64
+TRUE
+UP
+White
+Yellow
+
