@@ -25,9 +25,7 @@ handle_enemy_hit_by_bullet
         lda ENEMIES_KILLED_LOW
         adc #1
         sta ENEMIES_KILLED_LOW
-        lda ENEMIES_KILLED_HIGH
-        adc #0
-        sta ENEMIES_KILLED_HIGH
+
 
         
         lda #FALSE
@@ -38,8 +36,6 @@ handle_enemy_hit_by_bullet
         lda #249
         sta BULLET_Y_ADDRESS        
         rts
-
-
 
 
 bank_chain

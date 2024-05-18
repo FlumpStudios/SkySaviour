@@ -1,5 +1,5 @@
 ; NOTES
-; SCreen editor http://petscii.krissz.hu/
+; SCreen editor bh
 
 ; 10 SYS (4096)
 
@@ -30,7 +30,6 @@ initiate_game
 ; //////////////////
 gameplay_loop     
         IF_NOT_EQUEL $d012, #$ff, gameplay_loop ; Raster line check
-
 
         inc GAMEPLAY_TIMER_ADDRESS
         IF_EQUEL PLAYER_IN_DEATH_STATE, #TRUE, @jmp_to_death

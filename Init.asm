@@ -264,7 +264,9 @@ run_game_initiation
         sta ANDROID_X_SPEED_ADDRESS
         sta ANDROID_Y_SPEED_ADDRESS
         sta CURRENT_LEVEL
-        
+
+       
+        sta ENEMIES_KILLED_LOW
 
         lda #2        
         sta LIVES_ADDRESS
@@ -287,10 +289,6 @@ run_game_initiation
         
         lda #MAX_BULLETS
         sta BULLETS_AVAILABLE
-
-        lda #0
-        sta ENEMIES_KILLED_HIGH
-        sta ENEMIES_KILLED_LOW
 
         ;================================
         ;       SETUP HUD TEXT

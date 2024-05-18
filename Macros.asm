@@ -160,8 +160,7 @@ defm FLASH_STARS
 @skip
         inx
         cpx #254
-        beq @exit
-        jmp @loop
+        bne @loop        
 @exit
 endm
 
