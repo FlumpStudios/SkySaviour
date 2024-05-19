@@ -61,8 +61,7 @@ run_script
         lda #%01101111 ;Turn enemy 4 off and 1 and bullet on
         sta SPRITE_ENABLED_ADDRESS
         ldx #1
-        stx ENEMY_3_VARIATION
-        stx ENEMY_2_VARIATION
+        stx ENEMY_3_VARIATION      
         stx ENEMY_1_VARIATION
         jmp @done
 

@@ -22,11 +22,7 @@ random
 
 handle_enemy_hit_by_bullet 
         clc
-        lda ENEMIES_KILLED_LOW
-        adc #1
-        sta ENEMIES_KILLED_LOW
-
-
+        inc ENEMIES_KILLED_LOW
         
         lda #FALSE
         sta BULLET_IS_FIRING_LOCATION 
@@ -63,6 +59,7 @@ add_to_score
         lda SCORE_ADDRESS_LOW 
         ;adc CHAIN_ADDRESS        
         adc BULLETS_AVAILABLE
+        adc #1
         sta SCORE_ADDRESS_LOW
         lda SCORE_ADDRESS_HIGH
         adc #$00

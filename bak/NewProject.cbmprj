@@ -18,7 +18,7 @@
     <AutoLaunchName>newproject.prg</AutoLaunchName>
     <NoSingleFileBuild>False</NoSingleFileBuild>
     <CreatedWithVersion />
-    <HasGitRepo>False</HasGitRepo>
+    <HasGitRepo>True</HasGitRepo>
     <GitIgnoreList />
     <UsingKickAssembler>False</UsingKickAssembler>
     <KickOutputFile />
@@ -160,7 +160,7 @@
             <IncludeInBuild>False</IncludeInBuild>
             <Regions />
             <Breakpoints />
-            <Bookmarks>181,</Bookmarks>
+            <Bookmarks>192,</Bookmarks>
             <Topmost>False</Topmost>
             <FileOpen>True</FileOpen>
         </SourceFile>

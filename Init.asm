@@ -8,38 +8,49 @@ run_menu_init
         ; set sprite multicolors
         lda #$08
         sta $d025
+        
         lda #$06
         sta $d026
 
-        ; colorize sprites
-        lda #$06
+        ; colorize sprites        
+        ; Player ship
+        lda #$01
         sta $d027
 
-        lda #$0A
+        ; ?
+        lda #$05
         sta $d028
 
-        lda #$0A
+        ; Player bullet
+        lda #$05
         sta $d029
 
-        lda #$06
+        ; bee
+        lda #ENEMY_COLOUR
         sta $d02A
 
-        lda #$06
+        ; Spider
+        lda #ENEMY_COLOUR
         sta $d02B
 
-        lda #$06
+        ; enemy astroid/ant thing
+        lda #ENEMY_COLOUR
         sta $d02C
 
-        lda #$06
+        ; enemy bullet
+        lda #ENEMY_BULLET_COLOUR
         sta $d02D
 
-        lda #$06
+        ; enemy astroid/ant thing        
+        lda #ENEMY_COLOUR
         sta $d02E
 
-        ; positioning sprites
-        
+
+
+        ; positioning sprites        
         lda #125        ; Muncher
         sta ENEMY_2_X_ADDRESS       
+
         lda #215         ; Muncher
         sta ENEMY_2_Y_ADDRESS     
 
@@ -202,14 +213,16 @@ run_game_initiation
         ; Player_Bullet
         lda #PLAYER_BULLET_SPRITE_VALUE
         sta PLAYER_BULLET_SPRITE_ADDRESS
+
         lda #ENEMY_BULLET_SPRITE_VALUE
         sta ENEMY_BULLET_SPRITE_ADDRESS
 
         ; Enemy frames        
-        lda #ASTROID_ENEMY_F1_SPRITE_VALUE
+        lda #ROBOT_ENEMY_F1_SPRITE_VALUE
         sta ENEMY_1_CURRENT_FRAME_ADDRESS       
         sta ENEMY_1_SPRITE_ADDRESS
         
+        lda #ANDROID_ENEMY_F1_SPRITE_VALUE
         sta ENEMY_3_CURRENT_FRAME_ADDRESS               
         sta ENEMY_3_SPRITE_ADDRESS
 
@@ -240,10 +253,8 @@ run_game_initiation
         sta SCORE_ADDRESS_HIGH
         sta CHAIN_ADDRESS        
         sta ENEMY_BULLET_X_SPEED_ADDRESS
-        sta ENEMY_1_VARIATION
+       
         sta ENEMY_2_VARIATION
-        sta ENEMY_3_VARIATION
-        sta ENEMY_4_VARIATION
                         
         sta DEATH_TIMER_LOW
         sta ANIMATION_TIMER_ADDRESS
@@ -256,6 +267,10 @@ run_game_initiation
         sta BACKGROUND_COLOUR_LOCATION
         
         lda #1
+        sta ENEMY_1_VARIATION
+        sta ENEMY_3_VARIATION
+        sta ENEMY_4_VARIATION        
+        
         sta MUNCHER_Y_SPEED_ADDRESS
         sta ROBOT_X_SPEED_ADDRESS 
         sta MUNCHER_X_SPEED_ADDRESS
@@ -265,14 +280,14 @@ run_game_initiation
         sta ANDROID_Y_SPEED_ADDRESS
         sta CURRENT_LEVEL
 
-       
+
         sta ENEMIES_KILLED_LOW
 
         lda #2        
-        sta LIVES_ADDRESS
         sta ENEMY_BULLET_Y_SPEED_ADDRESS
 
         lda #3
+        sta LIVES_ADDRESS
         sta UFO_X_SPEED_ADDRESS
         sta UFO_Y_SPEED_ADDRESS
 
