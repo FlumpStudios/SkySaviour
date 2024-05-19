@@ -181,17 +181,6 @@ run_game_initiation
         sta $d005       
         
         
-        lda #0        
-        sta ENEMY_1_X_ADDRESS       
-        sta ENEMY_2_X_ADDRESS       
-        sta ENEMY_3_X_ADDRESS
-        sta ENEMY_4_X_ADDRESS
-        sta ENEMY_BULLET_X
-        sta EXPLOSION_COUNTER
-        sta EXPLOSION_PITCH
-        sta FIRE_SOUND_PITCH    
-        sta EXTRA_LIFE_AWARDED
-        sta FIRE_SOUND_COUNTER ; Nice side effect of setting this to zero is a nice lifting intro sounds
 
         RESET_DEATH_SOUND_PITCH
         
@@ -251,8 +240,7 @@ run_game_initiation
         sta TEMP2
         sta TEMP3
         sta SCORE_ADDRESS_HIGH
-        sta CHAIN_ADDRESS        
-        sta ENEMY_BULLET_X_SPEED_ADDRESS
+        sta CHAIN_ADDRESS     
        
         sta ENEMY_2_VARIATION
                         
@@ -265,6 +253,16 @@ run_game_initiation
         sta IS_IN_END_OF_LEVEL
         sta END_OF_LEVEL_TIMER
         sta BACKGROUND_COLOUR_LOCATION
+        sta ENEMY_1_X_ADDRESS       
+        sta ENEMY_2_X_ADDRESS       
+        sta ENEMY_3_X_ADDRESS
+        sta ENEMY_4_X_ADDRESS
+        sta ENEMY_BULLET_X
+        sta EXPLOSION_COUNTER
+        sta EXPLOSION_PITCH
+        sta FIRE_SOUND_PITCH    
+        sta EXTRA_LIFE_AWARDED
+        sta FIRE_SOUND_COUNTER ; Nice side effect of setting this to zero is a nice lifting intro sounds
         
         lda #1
         sta ENEMY_1_VARIATION

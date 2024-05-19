@@ -63,7 +63,7 @@ flash_stars
         jmp gameplay_loop
 odd
         FLASH_STARS $0400 + 255
-        FLASH_STARS $0400 + 765        
+        ;FLASH_STARS $0400 + 765        
         jmp gameplay_loop
 
 
