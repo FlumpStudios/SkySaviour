@@ -283,9 +283,9 @@ run_game_initiation
 
         lda #2        
         sta ENEMY_BULLET_Y_SPEED_ADDRESS
+        sta LIVES_ADDRESS
 
         lda #3
-        sta LIVES_ADDRESS
         sta UFO_X_SPEED_ADDRESS
         sta UFO_Y_SPEED_ADDRESS
 
