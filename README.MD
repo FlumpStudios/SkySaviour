@@ -2,6 +2,7 @@
 
 Sky Saviour is an original shump for the Commodore 64 written in in 6502 assembly.
 
+If you just want the ROM, you can download it from itch.io [here](https://flump-studios.itch.io/sky-savior-64)
 ## How to play
 
 Defend the futuristic city of NeoCov from bizarre alien insect invaders! Your mission is to intercept and eliminate the enemies before they reach the city center.
