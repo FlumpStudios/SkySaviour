@@ -103,8 +103,8 @@ run_script
         lda #%01101111 ;Turn enemy 4 off and 1 and bullet on
         sta SPRITE_ENABLED_ADDRESS
         ldx #0
-        stx ENEMY_2_VARIATION
         stx ENEMY_1_VARIATION
+        stx ENEMY_2_VARIATION
         jmp @done
 
 
@@ -182,11 +182,13 @@ run_script
         lda #%11111111 ;Turn enemy 4 off and 1 and bullet on
         sta SPRITE_ENABLED_ADDRESS       
 
-@reset
-        lda #8
+@reset ; Rest the game when hit level 10
+        lda #1
         sta CURRENT_LEVEL
-        lda #137
+        lda #0
         sta ENEMIES_KILLED_LOW
+        inc ROBOT_Y_SPEED_ADDRESS
+        inc ENEMY_BULLET_Y_SPEED_ADDRESS
 
 @done
         rts

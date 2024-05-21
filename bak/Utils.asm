@@ -1,10 +1,8 @@
-reset_background_border_colour
+reset_background_border_colour        
+        lda #BLACK
         ; set border color
-        lda #BLACK
         sta $D020
-        
         ; set background color
-        lda #BLACK
         sta $D021
         rts
 
@@ -21,7 +19,6 @@ random
         rts
 
 handle_enemy_hit_by_bullet 
-        clc
         inc ENEMIES_KILLED_LOW
         
         lda #FALSE

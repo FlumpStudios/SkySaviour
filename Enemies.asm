@@ -472,6 +472,14 @@ move_enemy_4
 ; =========================      
 animate_sprite_1
         IF_EQUEL ENEMY_1_VARIATION, #0, set_sprite_1_animation_to_astroid
+
+        ; HACK: Attempt to stop the weird graphics glitch on the robot/bee enemy
+        IF_EQUEL ENEMY1_HIT, #TRUE, @anim_robot
+        IF_LESS_THAN ENEMY_1_CURRENT_FRAME_ADDRESS, #ROBOT_ENEMY_RESET_FRAME, @anim_robot
+        lda #ROBOT_ENEMY_F1_SPRITE_VALUE
+        sta ENEMY_1_CURRENT_FRAME_ADDRESS 
+
+@anim_robot
         ANIMATE_ENEMY ENEMY_1_CURRENT_FRAME_ADDRESS, ENEMY1_HIT, #ROBOT_ENEMY_F1_SPRITE_VALUE, reset_enemy_1_sprites, #ROBOT_ENEMY_RESET_FRAME, ENEMY_1_SPRITE_ADDRESS
         rts
 

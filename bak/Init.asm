@@ -114,13 +114,6 @@ run_menu_init
         bne *-24
 
 
-        
-        ; Enemy frames
-        
-        lda #MUNCHER_ENEMY_F1_SPRITE_VALUE
-        sta ENEMY_2_CURRENT_FRAME_ADDRESS               
-        sta ENEMY_2_SPRITE_ADDRESS
-
         ; set screen-sprite priority flags
         lda #$00
         sta $d01b
@@ -181,17 +174,6 @@ run_game_initiation
         sta $d005       
         
         
-        lda #0        
-        sta ENEMY_1_X_ADDRESS       
-        sta ENEMY_2_X_ADDRESS       
-        sta ENEMY_3_X_ADDRESS
-        sta ENEMY_4_X_ADDRESS
-        sta ENEMY_BULLET_X
-        sta EXPLOSION_COUNTER
-        sta EXPLOSION_PITCH
-        sta FIRE_SOUND_PITCH    
-        sta EXTRA_LIFE_AWARDED
-        sta FIRE_SOUND_COUNTER ; Nice side effect of setting this to zero is a nice lifting intro sounds
 
         RESET_DEATH_SOUND_PITCH
         
@@ -251,11 +233,8 @@ run_game_initiation
         sta TEMP2
         sta TEMP3
         sta SCORE_ADDRESS_HIGH
-        sta CHAIN_ADDRESS        
-        sta ENEMY_BULLET_X_SPEED_ADDRESS
-       
-        sta ENEMY_2_VARIATION
-                        
+        sta CHAIN_ADDRESS     
+                       
         sta DEATH_TIMER_LOW
         sta ANIMATION_TIMER_ADDRESS
         sta GAMEPLAY_TIMER_ADDRESS
@@ -265,9 +244,20 @@ run_game_initiation
         sta IS_IN_END_OF_LEVEL
         sta END_OF_LEVEL_TIMER
         sta BACKGROUND_COLOUR_LOCATION
+        sta ENEMY_1_X_ADDRESS       
+        sta ENEMY_2_X_ADDRESS       
+        sta ENEMY_3_X_ADDRESS
+        sta ENEMY_4_X_ADDRESS
+        sta ENEMY_BULLET_X
+        sta EXPLOSION_COUNTER
+        sta EXPLOSION_PITCH
+        sta FIRE_SOUND_PITCH    
+        sta EXTRA_LIFE_AWARDED
+        sta FIRE_SOUND_COUNTER ; Nice side effect of setting this to zero is a nice lifting intro sounds
         
         lda #1
         sta ENEMY_1_VARIATION
+        sta ENEMY_2_VARIATION        
         sta ENEMY_3_VARIATION
         sta ENEMY_4_VARIATION        
         
@@ -285,9 +275,9 @@ run_game_initiation
 
         lda #2        
         sta ENEMY_BULLET_Y_SPEED_ADDRESS
+        sta LIVES_ADDRESS
 
         lda #3
-        sta LIVES_ADDRESS
         sta UFO_X_SPEED_ADDRESS
         sta UFO_Y_SPEED_ADDRESS
 

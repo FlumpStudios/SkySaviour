@@ -7,8 +7,8 @@
 ~~~done_check{00041} = $1432 
 ~~~done{00066} = $15DE 
 ~~~done{00067} = $15EF 
-~~~done{00104} = $1BB6 
-~~~done{00105} = $1BE3 
+~~~done{00104} = $1BB0 
+~~~done{00105} = $1BDD 
 ~~~exit{00002} = $1070 
 ~~~exit{00003} = $1092 
 ~~~exit{00004} = $10B7 
@@ -33,54 +33,54 @@
 ~~~set_to_on{00002} = $1066 
 ~~~set_to_on{00003} = $1088 
 ~~~set_to_on{00004} = $10AD 
-~~~skip_death_animations{00154} = $1E56 
-~~~skip_death_animations{00155} = $1E88 
-~~~skip_death_animations{00157} = $1EC1 
-~~~skip_death_animations{00158} = $1EF3 
-~~~skip_death_animations{00160} = $1F2C 
-~~~skip_death_animations{00161} = $1F5E 
-~~~skip_death_animations{00163} = $1F97 
-~~~skip_death_animations{00164} = $1FC9 
+~~~skip_death_animations{00156} = $1E63 
+~~~skip_death_animations{00157} = $1E95 
+~~~skip_death_animations{00159} = $1ECE 
+~~~skip_death_animations{00160} = $1F00 
+~~~skip_death_animations{00162} = $1F39 
+~~~skip_death_animations{00163} = $1F6B 
+~~~skip_death_animations{00165} = $1FA4 
+~~~skip_death_animations{00166} = $1FD6 
 ~~~skip{00002} = $106B 
 ~~~skip{00003} = $108D 
 ~~~skip{00004} = $10B2 
-~~~update_pointer{00154} = $1E62 
-~~~update_pointer{00155} = $1E94 
-~~~update_pointer{00157} = $1ECD 
-~~~update_pointer{00158} = $1EFF 
-~~~update_pointer{00160} = $1F38 
-~~~update_pointer{00161} = $1F6A 
-~~~update_pointer{00163} = $1FA3 
-~~~update_pointer{00164} = $1FD5 
+~~~update_pointer{00156} = $1E6F 
+~~~update_pointer{00157} = $1EA1 
+~~~update_pointer{00159} = $1EDA 
+~~~update_pointer{00160} = $1F0C 
+~~~update_pointer{00162} = $1F45 
+~~~update_pointer{00163} = $1F77 
+~~~update_pointer{00165} = $1FB0 
+~~~update_pointer{00166} = $1FE2 
 ~~~update_score{00035} = $1351 
 ~~~update_score{00037} = $139B 
 ~~~update_score{00039} = $13E5 
 ~~~update_score{00041} = $142F 
 add_to_score = $1658 
-animate_sprite_1 = $1E30 
-animate_sprite_2 = $1E9B 
-animate_sprite_3 = $1F06 
-animate_sprite_4 = $1F71 
+animate_sprite_1 = $1E2A 
+animate_sprite_2 = $1EA8 
+animate_sprite_3 = $1F13 
+animate_sprite_4 = $1F7E 
 bank_chain = $162C 
 check_any_hit = $1451 
 check_bullet_collision = $1324 
 check_enemy_colliding_with_city = $12AB 
-check_joystick_input = $1A20 
+check_joystick_input = $1A1A 
 CHECK_PLAYER_BULLET_HIT_ENEMY = $14BE 
 check_player_collided_with_bullet = $12CE 
 clear = $37BA 
 clear_game_over = $11F8 
 clear_print_press = $15E1 
 end_of_level = $1153 
-fire_bullets = $1B7A 
-fire_from_robot = $1B8B 
-fire_from_UFO = $1BB8 
+fire_bullets = $1B74 
+fire_from_robot = $1B85 
+fire_from_UFO = $1BB2 
 flash_loop = $15C9 
-flash_player = $1BE6 
+flash_player = $1BE0 
 flash_stars = $1048 
 gameplay_loop = $100E 
 handle_enemy_hit_by_bullet = $161F 
-handle_player_input = $19F7 
+handle_player_input = $19F1 
 inc_chain = $166D 
 initiate_game = $100B 
 is_off_screen = $17C7 
@@ -88,12 +88,12 @@ kill_sound = $1292
 loop_menu = $15C6 
 main = $1008 
 main_menu_loop = $1599 
-move_enemy = $1C10 
-move_enemy_3 = $1D50 
-move_enemy_4 = $1DC6 
-move_enemy_bullet = $1BFB 
-move_enemy2_hori = $1CE8 
-move_enemy2_vert = $1C8E 
+move_enemy = $1C0A 
+move_enemy_3 = $1D4A 
+move_enemy_4 = $1DC0 
+move_enemy_bullet = $1BF5 
+move_enemy2_hori = $1CE2 
+move_enemy2_vert = $1C88 
 odd = $1095 
 play_death_sound = $1242 
 play_explosion_sound = $1227 
@@ -102,33 +102,34 @@ press_to_continue = $37A0
 print_key_press = $15D0 
 random = $15FE 
 recharge_bullets = $112F 
-reset_all_enemies = $1ABE 
+reset_all_enemies = $1AB8 
 reset_background_border_colour = $15F5 
 reset_chain = $164D 
-reset_enemy_1_sprites = $1AD8 
-reset_enemy_2_sprites = $1AE4 
-reset_enemy_3_sprites = $1AEF 
-reset_enemy_4_sprites = $1AFB 
-reset_enemy_bullet = $1ACE 
-return = $1BE5 
+reset_enemy_1_sprites = $1AD2 
+reset_enemy_2_sprites = $1ADE 
+reset_enemy_3_sprites = $1AE9 
+reset_enemy_4_sprites = $1AF5 
+reset_enemy_bullet = $1AC8 
+return = $1BDF 
 run_collision_checks = $1298 
 run_death = $150B 
-run_game_initiation = $1873 
+run_game_initiation = $1879 
 run_menu = $1582 
 run_menu_init = $17DB 
 run_script = $1684 
 run_sounds = $1205 
 set_player_colour = $10BA 
-set_sprite_1_animation_to_astroid = $1E69 
-set_sprite_2_animation_to_ufo = $1ED4 
-set_sprite_3_animation_to_astroid = $1F3F 
-set_sprite_4_animation_to_astroid = $1FAA 
+set_sprite_1_animation_to_astroid = $1E76 
+set_sprite_2_animation_to_ufo = $1EE1 
+set_sprite_3_animation_to_astroid = $1F4C 
+set_sprite_4_animation_to_astroid = $1FB7 
 update_bullet_UI = $10F0 
 update_bullet_UI_colour = $1107 
 update_colour = $15F2 
-update_enemies = $1B07 
+update_enemies = $1B01 
 
 ******* 58 Unused label(s) *******
+@anim_robot
 @call_enemy2_vert
 @call_move_enemy_3
 @call_move_enemy_4
@@ -294,25 +295,25 @@ update_enemies = $1B07
 ~~~set_to_on{00002}
 ~~~set_to_on{00003}
 ~~~set_to_on{00004}
-~~~skip_death_animations{00154}
-~~~skip_death_animations{00155}
+~~~skip_death_animations{00156}
 ~~~skip_death_animations{00157}
-~~~skip_death_animations{00158}
+~~~skip_death_animations{00159}
 ~~~skip_death_animations{00160}
-~~~skip_death_animations{00161}
+~~~skip_death_animations{00162}
 ~~~skip_death_animations{00163}
-~~~skip_death_animations{00164}
+~~~skip_death_animations{00165}
+~~~skip_death_animations{00166}
 ~~~skip{00002}
 ~~~skip{00003}
 ~~~skip{00004}
-~~~update_pointer{00154}
-~~~update_pointer{00155}
+~~~update_pointer{00156}
 ~~~update_pointer{00157}
-~~~update_pointer{00158}
+~~~update_pointer{00159}
 ~~~update_pointer{00160}
-~~~update_pointer{00161}
+~~~update_pointer{00162}
 ~~~update_pointer{00163}
-~~~update_pointer{00164}
+~~~update_pointer{00165}
+~~~update_pointer{00166}
 ~~~update_score{00035}
 ~~~update_score{00037}
 ~~~update_score{00039}
@@ -320,7 +321,7 @@ update_enemies = $1B07
 check_joystick_input
 is_off_screen
 
-******* 182 Variable(s) *******
+******* 184 Variable(s) *******
 A  = $0001
 ANDROID_ENEMY_F1_SPRITE_VALUE  = $003B
 ANDROID_ENEMY_RESET_FRAME  = $003E
@@ -332,6 +333,8 @@ ASTROID_ENEMY_RESET_FRAME  = $0038
 ASTROID_Y_SPEED_ADDRESS  = $C022
 B  = $0002
 BACKGROUND_COLOUR_LOCATION  = $D021
+BITER_ENEMY_F1_SPRITE_VALUE  = $002D
+BITER_ENEMY_RESET_FRAME  = $002F
 Black  = $0000
 Blue  = $0006
 BORDER_COLOUR_LOCATION  = $D020
@@ -503,8 +506,10 @@ X  = $0018
 Y  = $0019
 Yellow  = $0007
 Z  = $001A
-******* -83 Unused variables(s) *******
+******* -82 Unused variables(s) *******
 B
+BITER_ENEMY_F1_SPRITE_VALUE
+BITER_ENEMY_RESET_FRAME
 Blue
 Brown
 BULLET_UI_START_ADDRESS

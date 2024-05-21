@@ -226,8 +226,10 @@ move_enemy
 
 @move_astroid_down
         lda ENEMY_1_Y_ADDRESS
-        adc #2
+        adc ROBOT_Y_SPEED_ADDRESS
         sta ENEMY_1_Y_ADDRESS
+        IF_LESS_THAN ANIMATION_TIMER_ADDRESS, #2, @right
+        IF_MORE_THAN ANIMATION_TIMER_ADDRESS, #2, @left
         rts
 
 @skip_u
@@ -364,6 +366,8 @@ move_enemy_3
 
         IF_EQUEL ENEMY_3_VARIATION, #0, @move_astroid_down
 
+        IF_LESS_THAN ANIMATION_TIMER_ADDRESS, #2, @move_hori
+
         lda ENEMY_3_Y_ADDRESS
         adc ROBOT_Y_SPEED_ADDRESS
         sta ENEMY_3_Y_ADDRESS
@@ -371,7 +375,7 @@ move_enemy_3
 
 @move_astroid_down
         lda ENEMY_3_Y_ADDRESS
-        adc #2
+        adc ROBOT_Y_SPEED_ADDRESS
         sta ENEMY_3_Y_ADDRESS
         IF_LESS_THAN ANIMATION_TIMER_ADDRESS, #2,  @left
         IF_MORE_THAN ANIMATION_TIMER_ADDRESS, #2,  @right
@@ -420,6 +424,8 @@ move_enemy_4
 @move_down
         IF_EQUEL ENEMY_4_VARIATION, #0, @move_astroid_down
 
+        IF_LESS_THAN ANIMATION_TIMER_ADDRESS, #2, @move_hori
+
         lda ENEMY_4_Y_ADDRESS
         adc ROBOT_Y_SPEED_ADDRESS
         sta ENEMY_4_Y_ADDRESS
@@ -427,10 +433,10 @@ move_enemy_4
 
 @move_astroid_down
         lda ENEMY_4_Y_ADDRESS
-        adc #2
+        adc ROBOT_Y_SPEED_ADDRESS
         sta ENEMY_4_Y_ADDRESS
-        IF_LESS_THAN ANIMATION_TIMER_ADDRESS, #3,  @left
-        IF_MORE_THAN ANIMATION_TIMER_ADDRESS, #4,  @right
+       ; IF_LESS_THAN ANIMATION_TIMER_ADDRESS, #2,  @left
+      ;  IF_MORE_THAN ANIMATION_TIMER_ADDRESS, #2,  @right
         
         rts
 
