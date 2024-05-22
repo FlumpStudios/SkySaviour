@@ -43,10 +43,12 @@ bank_chain
         sta COLLISION_TAKEN_PLACE_ADDRESS
         IF_MORE_THAN CHAIN_ADDRESS, #1, reset_chain
         jsr reset_chain
+        jsr update_display
         rts
 
 reset_chain
         DRAW_CHAR #ClearBlock, 632
+        DRAW_CHAR #48, 631
         lda #0
         sta CHAIN_ADDRESS
         rts
@@ -74,7 +76,28 @@ inc_chain
         lda CHAIN_ADDRESS
         adc #CHAIN_INCREASE_AMOUNT
         sta CHAIN_ADDRESS
+
+
 @done        
+        rts
+
+update_display
+        PRINT_DEBUG_16 #31,#12,SCORE_ADDRESS_HIGH, SCORE_ADDRESS_LOW
+        PRINT_DEBUG #31,#15, CHAIN_ADDRESS  
+        ldx #0 ; Reset the x register
+        lda #FALSE
+        sta COLLISION_TAKEN_PLACE_ADDRESS ; Reset temp 3 that we used to see if any collisions happened
+        MAKE_EXPLOSION_SOUND
+        IF_LESS_THAN SCORE_ADDRESS_HIGH, #3, @exit
+        IF_LESS_THAN SCORE_ADDRESS_LOW, #232, @exit
+        IF_EQUEL EXTRA_LIFE_AWARDED, #TRUE, @exit
+        inc LIVES_ADDRESS
+        lda #0 ; Little hack to generate a sound when extra life gained
+        sta FIRE_SOUND_COUNTER
+        lda #TRUE
+        sta EXTRA_LIFE_AWARDED
+        PRINT_DEBUG #33,#22, LIVES_ADDRESS
+@exit
         rts
         
         

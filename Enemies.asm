@@ -150,7 +150,9 @@ fire_from_robot
         cmp #TRUE
         beq return
 
-        FIRE_ENEMY_BULLET ENEMY_1_X_ADDRESS, ENEMY_1_Y_ADDRESS        
+        ldx ENEMY_1_X_ADDRESS
+        ldy ENEMY_1_Y_ADDRESS
+        jsr fire_enemy_bullet
         rts
 
 
@@ -166,8 +168,10 @@ fire_from_UFO
         lda ENEMY2_HIT
         cmp #TRUE
         beq return        
-
-        FIRE_ENEMY_BULLET ENEMY_2_X_ADDRESS, ENEMY_2_Y_ADDRESS
+      
+        ldx ENEMY_2_X_ADDRESS 
+        ldy ENEMY_2_Y_ADDRESS
+        jsr fire_enemy_bullet
         rts
 
 
@@ -513,3 +517,18 @@ animate_sprite_4
 set_sprite_4_animation_to_astroid
         ANIMATE_ENEMY ENEMY_4_CURRENT_FRAME_ADDRESS, ENEMY4_HIT, #ASTROID_ENEMY_F1_SPRITE_VALUE, reset_enemy_4_sprites, #ASTROID_ENEMY_RESET_FRAME, ENEMY_4_SPRITE_ADDRESS     
         rts   
+
+
+fire_enemy_bullet
+
+        lda ENEMY_BULLET_IS_FIRING_ADDRESS
+        cmp #TRUE
+        beq @done
+
+        lda #TRUE
+        sta ENEMY_BULLET_IS_FIRING_ADDRESS        
+
+        stx ENEMY_BULLET_X 
+        sty ENEMY_BULLET_Y
+@done
+        rts

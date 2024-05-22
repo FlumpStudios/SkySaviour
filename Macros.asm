@@ -10,22 +10,7 @@ defm RESET_DEATH_SOUND_PITCH
         sta DEATH_SOUND_PITCH
 endm
 
-defm FIRE_ENEMY_BULLET
-        lda ENEMY_BULLET_IS_FIRING_ADDRESS
-        cmp #TRUE
-        beq @done
 
-        lda #TRUE
-        sta ENEMY_BULLET_IS_FIRING_ADDRESS        
-
-        ldx /1
-        ldy /2
-
-        stx ENEMY_BULLET_X 
-        sty ENEMY_BULLET_Y
-@done        
-        rts
-endm
 
 
 defm SET_TEXT_COLOUR        
@@ -161,7 +146,6 @@ defm FLASH_STARS
         inx
         cpx #254
         bne @loop        
-@exit
 endm
 
 

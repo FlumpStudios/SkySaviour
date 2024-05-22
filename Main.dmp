@@ -1,17 +1,12 @@
 
-******* 127 Label(s) *******
+******* 124 Label(s) *******
 ~~~done_check{00033} = $1319 
 ~~~done_check{00035} = $1354 
 ~~~done_check{00037} = $139E 
 ~~~done_check{00039} = $13E8 
 ~~~done_check{00041} = $1432 
-~~~done{00066} = $15DE 
-~~~done{00067} = $15EF 
-~~~done{00104} = $1BB0 
-~~~done{00105} = $1BDD 
-~~~exit{00002} = $1070 
-~~~exit{00003} = $1092 
-~~~exit{00004} = $10B7 
+~~~done{00059} = $157B 
+~~~done{00060} = $158C 
 ~~~has_collided{00033} = $1317 
 ~~~has_collided{00035} = $1341 
 ~~~has_collided{00037} = $138B 
@@ -25,110 +20,112 @@
 ~~~loop{00002} = $1050 
 ~~~loop{00003} = $1072 
 ~~~loop{00004} = $1097 
-~~~read_char_loop{00066} = $15D2 
-~~~read_char_loop{00067} = $15E3 
+~~~read_char_loop{00059} = $156F 
+~~~read_char_loop{00060} = $1580 
 ~~~set_to_off{00002} = $105E 
 ~~~set_to_off{00003} = $1080 
 ~~~set_to_off{00004} = $10A5 
 ~~~set_to_on{00002} = $1066 
 ~~~set_to_on{00003} = $1088 
 ~~~set_to_on{00004} = $10AD 
-~~~skip_death_animations{00156} = $1E63 
-~~~skip_death_animations{00157} = $1E95 
-~~~skip_death_animations{00159} = $1ECE 
-~~~skip_death_animations{00160} = $1F00 
-~~~skip_death_animations{00162} = $1F39 
-~~~skip_death_animations{00163} = $1F6B 
-~~~skip_death_animations{00165} = $1FA4 
-~~~skip_death_animations{00166} = $1FD6 
+~~~skip_death_animations{00156} = $1E66 
+~~~skip_death_animations{00157} = $1E98 
+~~~skip_death_animations{00159} = $1ED1 
+~~~skip_death_animations{00160} = $1F03 
+~~~skip_death_animations{00162} = $1F3C 
+~~~skip_death_animations{00163} = $1F6E 
+~~~skip_death_animations{00165} = $1FA7 
+~~~skip_death_animations{00166} = $1FD9 
 ~~~skip{00002} = $106B 
 ~~~skip{00003} = $108D 
 ~~~skip{00004} = $10B2 
-~~~update_pointer{00156} = $1E6F 
-~~~update_pointer{00157} = $1EA1 
-~~~update_pointer{00159} = $1EDA 
-~~~update_pointer{00160} = $1F0C 
-~~~update_pointer{00162} = $1F45 
-~~~update_pointer{00163} = $1F77 
-~~~update_pointer{00165} = $1FB0 
-~~~update_pointer{00166} = $1FE2 
+~~~update_pointer{00156} = $1E72 
+~~~update_pointer{00157} = $1EA4 
+~~~update_pointer{00159} = $1EDD 
+~~~update_pointer{00160} = $1F0F 
+~~~update_pointer{00162} = $1F48 
+~~~update_pointer{00163} = $1F7A 
+~~~update_pointer{00165} = $1FB3 
+~~~update_pointer{00166} = $1FE5 
 ~~~update_score{00035} = $1351 
 ~~~update_score{00037} = $139B 
 ~~~update_score{00039} = $13E5 
 ~~~update_score{00041} = $142F 
-add_to_score = $1658 
-animate_sprite_1 = $1E2A 
-animate_sprite_2 = $1EA8 
-animate_sprite_3 = $1F13 
-animate_sprite_4 = $1F7E 
-bank_chain = $162C 
-check_any_hit = $1451 
+add_to_score = $15FD 
+animate_sprite_1 = $1E2D 
+animate_sprite_2 = $1EAB 
+animate_sprite_3 = $1F16 
+animate_sprite_4 = $1F81 
+bank_chain = $15C9 
+check_any_hit = $144E 
 check_bullet_collision = $1324 
 check_enemy_colliding_with_city = $12AB 
-check_joystick_input = $1A1A 
-CHECK_PLAYER_BULLET_HIT_ENEMY = $14BE 
+check_joystick_input = $1A39 
+CHECK_PLAYER_BULLET_HIT_ENEMY = $145B 
 check_player_collided_with_bullet = $12CE 
 clear = $37BA 
 clear_game_over = $11F8 
-clear_print_press = $15E1 
+clear_print_press = $157E 
 end_of_level = $1153 
-fire_bullets = $1B74 
-fire_from_robot = $1B85 
-fire_from_UFO = $1BB2 
-flash_loop = $15C9 
-flash_player = $1BE0 
+fire_bullets = $1B93 
+fire_enemy_bullet = $1FEC 
+fire_from_robot = $1BA4 
+fire_from_UFO = $1BC3 
+flash_loop = $1566 
+flash_player = $1BE3 
 flash_stars = $1048 
 gameplay_loop = $100E 
-handle_enemy_hit_by_bullet = $161F 
-handle_player_input = $19F1 
-inc_chain = $166D 
+handle_enemy_hit_by_bullet = $15BC 
+handle_player_input = $1A10 
+inc_chain = $1612 
 initiate_game = $100B 
-is_off_screen = $17C7 
+is_off_screen = $17E6 
 kill_sound = $1292 
-loop_menu = $15C6 
+loop_menu = $1563 
 main = $1008 
-main_menu_loop = $1599 
-move_enemy = $1C0A 
-move_enemy_3 = $1D4A 
-move_enemy_4 = $1DC0 
-move_enemy_bullet = $1BF5 
-move_enemy2_hori = $1CE2 
-move_enemy2_vert = $1C88 
+main_menu_loop = $1536 
+move_enemy = $1C0D 
+move_enemy_3 = $1D4D 
+move_enemy_4 = $1DC3 
+move_enemy_bullet = $1BF8 
+move_enemy2_hori = $1CE5 
+move_enemy2_vert = $1C8B 
 odd = $1095 
 play_death_sound = $1242 
 play_explosion_sound = $1227 
 play_fire_sound = $126C 
 press_to_continue = $37A0 
-print_key_press = $15D0 
-random = $15FE 
+print_key_press = $156D 
+random = $159B 
 recharge_bullets = $112F 
-reset_all_enemies = $1AB8 
-reset_background_border_colour = $15F5 
-reset_chain = $164D 
-reset_enemy_1_sprites = $1AD2 
-reset_enemy_2_sprites = $1ADE 
-reset_enemy_3_sprites = $1AE9 
-reset_enemy_4_sprites = $1AF5 
-reset_enemy_bullet = $1AC8 
-return = $1BDF 
+reset_all_enemies = $1AD7 
+reset_background_border_colour = $1592 
+reset_chain = $15ED 
+reset_enemy_1_sprites = $1AF1 
+reset_enemy_2_sprites = $1AFD 
+reset_enemy_3_sprites = $1B08 
+reset_enemy_4_sprites = $1B14 
+reset_enemy_bullet = $1AE7 
+return = $1BE2 
 run_collision_checks = $1298 
-run_death = $150B 
-run_game_initiation = $1879 
-run_menu = $1582 
-run_menu_init = $17DB 
-run_script = $1684 
+run_death = $14A8 
+run_game_initiation = $1898 
+run_menu = $151F 
+run_menu_init = $17FA 
+run_script = $168D 
 run_sounds = $1205 
 set_player_colour = $10BA 
-set_sprite_1_animation_to_astroid = $1E76 
-set_sprite_2_animation_to_ufo = $1EE1 
-set_sprite_3_animation_to_astroid = $1F4C 
-set_sprite_4_animation_to_astroid = $1FB7 
+set_sprite_1_animation_to_astroid = $1E79 
+set_sprite_2_animation_to_ufo = $1EE4 
+set_sprite_3_animation_to_astroid = $1F4F 
+set_sprite_4_animation_to_astroid = $1FBA 
 update_bullet_UI = $10F0 
 update_bullet_UI_colour = $1107 
-update_colour = $15F2 
-update_enemies = $1B01 
+update_colour = $158F 
+update_display = $1629 
+update_enemies = $1B20 
 
-******* 58 Unused label(s) *******
+******* 53 Unused label(s) *******
 @anim_robot
 @call_enemy2_vert
 @call_move_enemy_3
@@ -151,10 +148,11 @@ update_enemies = $1B01
 @done
 @done
 @done
+@done
 @done_flash
 @draw_game_over
 @draw_menu
-@end_game
+@exit
 @exit
 @exit
 @exit
@@ -186,6 +184,7 @@ update_enemies = $1B01
 @left
 @left
 @level1
+@level10
 @level2
 @level3
 @level4
@@ -235,6 +234,7 @@ update_enemies = $1B01
 @right
 @right
 @right
+@run_level10
 @run_level2
 @run_level3
 @run_level4
@@ -261,19 +261,14 @@ update_enemies = $1B01
 @skip_u
 @true
 @turn_end_of_level_off
-@update_display
+@update_display_local
 ~~~done_check{00033}
 ~~~done_check{00035}
 ~~~done_check{00037}
 ~~~done_check{00039}
 ~~~done_check{00041}
-~~~done{00066}
-~~~done{00067}
-~~~done{00104}
-~~~done{00105}
-~~~exit{00002}
-~~~exit{00003}
-~~~exit{00004}
+~~~done{00059}
+~~~done{00060}
 ~~~has_collided{00033}
 ~~~has_collided{00035}
 ~~~has_collided{00037}
@@ -287,8 +282,8 @@ update_enemies = $1B01
 ~~~loop{00002}
 ~~~loop{00003}
 ~~~loop{00004}
-~~~read_char_loop{00066}
-~~~read_char_loop{00067}
+~~~read_char_loop{00059}
+~~~read_char_loop{00060}
 ~~~set_to_off{00002}
 ~~~set_to_off{00003}
 ~~~set_to_off{00004}
@@ -506,7 +501,7 @@ X  = $0018
 Y  = $0019
 Yellow  = $0007
 Z  = $001A
-******* -82 Unused variables(s) *******
+******* -85 Unused variables(s) *******
 B
 BITER_ENEMY_F1_SPRITE_VALUE
 BITER_ENEMY_RESET_FRAME

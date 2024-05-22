@@ -115,8 +115,7 @@ check_bullet_collision
         jsr random ; Temp 1 and accumulator will store respose of the random function
         IF_LESS_THAN TEMP1, #145, @setEnemy2ToVar1
         lda #0        
-        sta ENEMY_2_VARIATION
-        jmp @exit
+        sta ENEMY_2_VARIATION        
 
 @exit
         rts
@@ -128,26 +127,12 @@ check_bullet_collision
 check_any_hit
         lda COLLISION_TAKEN_PLACE_ADDRESS 
         cmp #TRUE
-        beq @update_display 
+        beq @update_display_local
         jmp @exit
-        
-        
-@update_display
-        PRINT_DEBUG_16 #31,#12,SCORE_ADDRESS_HIGH, SCORE_ADDRESS_LOW
-        PRINT_DEBUG #31,#15, CHAIN_ADDRESS  
-        ldx #0 ; Reset the x register
-        lda #FALSE
-        sta COLLISION_TAKEN_PLACE_ADDRESS ; Reset temp 3 that we used to see if any collisions happened
-        MAKE_EXPLOSION_SOUND
-        IF_LESS_THAN SCORE_ADDRESS_HIGH, #3, @exit
-        IF_LESS_THAN SCORE_ADDRESS_LOW, #232, @exit
-        IF_EQUEL EXTRA_LIFE_AWARDED, #TRUE, @exit
-        inc LIVES_ADDRESS
-        lda #0 ; Little hack to generate a sound when extra life gained
-        sta FIRE_SOUND_COUNTER
-        lda #TRUE
-        sta EXTRA_LIFE_AWARDED
-        PRINT_DEBUG #33,#22, LIVES_ADDRESS
+
+@update_display_local
+        jsr update_display
+
 @exit
         rts
 

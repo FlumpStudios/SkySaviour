@@ -167,7 +167,7 @@ run_script
         jmp @done
 
 @level9
-        IF_MORE_THAN ENEMIES_KILLED_LOW, #166, @reset
+        IF_MORE_THAN ENEMIES_KILLED_LOW, #166, @level10
         
         lda CURRENT_LEVEL
         cmp #9
@@ -182,7 +182,22 @@ run_script
         lda #%11111111 ;Turn enemy 4 off and 1 and bullet on
         sta SPRITE_ENABLED_ADDRESS       
 
-@reset ; Rest the game when hit level 10
+@level10
+        IF_MORE_THAN ENEMIES_KILLED_LOW, 184, @reset
+        
+        lda CURRENT_LEVEL
+        cmp #10
+        beq @run_level10
+        
+        lda #TRUE
+        sta IS_IN_END_OF_LEVEL
+        
+        inc CURRENT_LEVEL
+
+@run_level10
+              
+
+@reset ; Rest the game when hit level 11
         lda #1
         sta CURRENT_LEVEL
         lda #0

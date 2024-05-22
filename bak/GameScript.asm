@@ -21,7 +21,7 @@ run_script
         rts
 
 @level2
-        IF_MORE_THAN ENEMIES_KILLED_LOW, #22, @level3
+        IF_MORE_THAN ENEMIES_KILLED_LOW, #24, @level3
 
         lda CURRENT_LEVEL
         cmp #2
@@ -45,7 +45,7 @@ run_script
         jmp @done
 
 @level3
-        IF_MORE_THAN ENEMIES_KILLED_LOW, #36, @level4
+        IF_MORE_THAN ENEMIES_KILLED_LOW, #40, @level4
 
         lda CURRENT_LEVEL
         cmp #3
@@ -67,7 +67,7 @@ run_script
 
 
 @level4
-        IF_MORE_THAN ENEMIES_KILLED_LOW, #52, @level5
+        IF_MORE_THAN ENEMIES_KILLED_LOW, #58, @level5
         lda CURRENT_LEVEL
         cmp #4
         beq @run_level4
@@ -89,7 +89,7 @@ run_script
         jmp @done
 
 @level5
-        IF_MORE_THAN ENEMIES_KILLED_LOW, #70, @level6
+        IF_MORE_THAN ENEMIES_KILLED_LOW, #78, @level6
         lda CURRENT_LEVEL
         cmp #5
         beq @run_level5
@@ -109,7 +109,7 @@ run_script
 
 
 @level6
-        IF_MORE_THAN ENEMIES_KILLED_LOW, #90, @level7
+        IF_MORE_THAN ENEMIES_KILLED_LOW, #100, @level7
         lda CURRENT_LEVEL
         cmp #6
         beq @run_level6
@@ -130,7 +130,7 @@ run_script
         jmp @done
 
 @level7
-        IF_MORE_THAN ENEMIES_KILLED_LOW, #112, @level8
+        IF_MORE_THAN ENEMIES_KILLED_LOW, #124, @level8
         lda CURRENT_LEVEL
         cmp #7
         beq @run_level7
@@ -151,7 +151,7 @@ run_script
         jmp @done
 
 @level8
-        IF_MORE_THAN ENEMIES_KILLED_LOW, #136, @level9
+        IF_MORE_THAN ENEMIES_KILLED_LOW, #150, @level9
         lda CURRENT_LEVEL
         cmp #8
         beq @run_level8
@@ -167,7 +167,7 @@ run_script
         jmp @done
 
 @level9
-        IF_MORE_THAN ENEMIES_KILLED_LOW, #150, @reset
+        IF_MORE_THAN ENEMIES_KILLED_LOW, #166, @level10
         
         lda CURRENT_LEVEL
         cmp #9
@@ -181,6 +181,21 @@ run_script
 @run_level9
         lda #%11111111 ;Turn enemy 4 off and 1 and bullet on
         sta SPRITE_ENABLED_ADDRESS       
+
+@level10
+        IF_MORE_THAN ENEMIES_KILLED_LOW, #166, @reset
+        
+        lda CURRENT_LEVEL
+        cmp #10
+        beq @run_level10
+        
+        lda #TRUE
+        sta IS_IN_END_OF_LEVEL
+        
+        inc CURRENT_LEVEL
+
+@run_level10
+              
 
 @reset ; Rest the game when hit level 10
         lda #1

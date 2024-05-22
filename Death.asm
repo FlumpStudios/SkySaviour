@@ -14,15 +14,13 @@ run_death
         sta DEATH_TIMER_LOW
         lda #FALSE
         sta PLAYER_IN_DEATH_STATE        
-        IF_EQUEL LIVES_ADDRESS, #0, @end_game        
+        IF_EQUEL LIVES_ADDRESS, #0, @check_high       
         dec LIVES_ADDRESS        
         PRINT_DEBUG #33,#22, LIVES_ADDRESS
         jsr reset_all_enemies
         jsr reset_background_border_colour
         jsr reset_chain
         jmp gameplay_loop
-
-@end_game
         
 @check_high
         IF_LESS_THAN SCORE_ADDRESS_HIGH, HI_SCORE_ADDRESS_HIGH, @checkLow

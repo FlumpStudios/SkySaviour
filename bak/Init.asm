@@ -68,6 +68,11 @@ run_menu_init
         lda #$00
         sta $d01b
 
+        lda #1
+        sta ENEMY_1_VARIATION
+        sta ENEMY_2_VARIATION        
+        sta ENEMY_3_VARIATION
+        sta ENEMY_4_VARIATION   
              
 
         ;================================
@@ -209,8 +214,7 @@ run_game_initiation
         sta ENEMY_3_SPRITE_ADDRESS
 
         sta ENEMY_4_CURRENT_FRAME_ADDRESS               
-        sta ENEMY_4_SPRITE_ADDRESS
-       
+        sta ENEMY_4_SPRITE_ADDRESS       
         
         lda #MUNCHER_ENEMY_F1_SPRITE_VALUE
         sta ENEMY_2_CURRENT_FRAME_ADDRESS               
@@ -256,10 +260,7 @@ run_game_initiation
         sta FIRE_SOUND_COUNTER ; Nice side effect of setting this to zero is a nice lifting intro sounds
         
         lda #1
-        sta ENEMY_1_VARIATION
-        sta ENEMY_2_VARIATION        
-        sta ENEMY_3_VARIATION
-        sta ENEMY_4_VARIATION        
+     
         
         sta MUNCHER_Y_SPEED_ADDRESS
         sta ROBOT_X_SPEED_ADDRESS 
